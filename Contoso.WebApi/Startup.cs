@@ -38,7 +38,7 @@ namespace Contoso.WebApi
             // ******************************************
             // TODO #2: Update the code in this block to set the database connection from a Key Vault secret
             services.AddDbContext<ContosoDbContext>(options =>
-                options.UseSqlServer(Configuration["SqlConnectionString"]);
+                options.UseSqlServer(Configuration["SqlConnectionString"]));
             // ******************************************
 
             // Register the Swagger generator
